@@ -1,52 +1,47 @@
-Portable Doorbell with Raspberry Pi Pico W
+# Portable Doorbell with Raspberry Pi Pico W
 
-This is a small project for creating a portable doorbell using a Raspberry Pi Pico W and MicroPython. When the button is pressed, you receive a Telegram notification directly on your phone.
+This is a small project for creating a **portable doorbell** using a Raspberry Pi Pico W and MicroPython.  
+When the button is pressed, you receive a **Telegram notification** directly on your phone.
 
+---
 
-Firmware
+## Firmware
 
-I used MicroPython firmware for the Raspberry Pi Pico W. You can download it here:
-https://micropython.org/download/RPI_PICO2_W/
+I used MicroPython firmware for the Raspberry Pi Pico W.  
+You can download it here:  
+[https://micropython.org/download/RPI_PICO2_W/](https://micropython.org/download/RPI_PICO2_W/)
 
-Hardware Setup
+---
 
-Soldering:
-Soldered the header pins to the Pico W board.
+## Hardware Setup
 
-Circuit Wiring:
+### Soldering
+- Soldered the header pins to the Pico W board.
 
-Connected a 10 kΩ resistor between 3V3 and GP0.
+### Circuit Wiring
+- Connected a **10 kΩ resistor** between **3V3** and **GP0**.
+- Connected the push button wires:
+  - One wire to **GND**
+  - The other to **GP0** (the same pin as the resistor)
 
-Connected the push button wires:
+When the button is pressed, **GP0 goes low**, signaling the button press.
 
-One wire to GND
+> **Note:** Soldering the resistor is optional. Raspberry Pi Pico W with MicroPython can simulate the button state in software if needed.
 
-The other to GP0 (the same pin as the resistor)
+---
 
-When the button is pressed, GP0 goes low, signaling the button press.
+## Telegram Integration
 
-Note: Soldering the resistor is optional. Raspberry Pi Pico W with MicroPython can simulate the button state in software if needed.
+- Created a bot using **BotFather** on Telegram.
+- Used the bot’s **API token** to send messages.
+- Each button press triggers a **Telegram message** to the configured **chat ID**.
 
+---
 
-Telegram Integration
+## Requirements
 
-Created a bot using BotFather on Telegram.
-
-Used the bot’s API token to send messages.
-
-Each button press triggers a Telegram message to the configured chat ID.
-
-
-Requirements
-
-Raspberry Pi Pico W
-
-MicroPython firmware (latest version)
-
-USB cable for flashing firmware
-
-Push button and 10 kΩ resistor (optional)
-
-Telegram Bot token from BotFather
-
-
+- Raspberry Pi Pico W
+- MicroPython firmware (latest version)
+- USB cable for flashing firmware
+- Push button and 10 kΩ resistor (optional)
+- Telegram Bot token from BotFather
