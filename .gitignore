@@ -1,7 +1,5 @@
-raspberrypiRingg/.gitignore
-raspberrypiRingg/docu_MAIN2.md
-raspberrypiRingg/old
-raspberrypiRingg/__pycache__
-raspberrypiRingg/.vscode
-raspberrypiRingg/secrets.py__pycache__/
+# Cachés/binaries Python
+__pycache__/
 *.pyc
+old/
+
