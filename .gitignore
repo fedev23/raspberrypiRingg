@@ -4,3 +4,5 @@ RaspberryPY/docu_MAIN2.md
 RaspberryPY/old
 RaspberryPY/__pycache__
 RaspberryPY/.vscode
+raspberrypiRingg/secrets.py__pycache__/
+*.pyc
