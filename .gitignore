@@ -3,3 +3,13 @@ __pycache__/
 *.pyc
 old/
 
+__pycache__/
+*.pyc
+.vscode/
+old/
+secrets.py
+__pycache__/
+*.pyc
+.vscode/
+old/
+secrets.py
