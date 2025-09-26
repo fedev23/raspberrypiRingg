@@ -1,8 +1,7 @@
-RaspberryPY/secrets.py
-RaspberryPY/.gitignore
-RaspberryPY/docu_MAIN2.md
-RaspberryPY/old
-RaspberryPY/__pycache__
-RaspberryPY/.vscode
+raspberrypiRingg/.gitignore
+raspberrypiRingg/docu_MAIN2.md
+raspberrypiRingg/old
+raspberrypiRingg/__pycache__
+raspberrypiRingg/.vscode
 raspberrypiRingg/secrets.py__pycache__/
 *.pyc
